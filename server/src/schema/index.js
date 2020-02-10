@@ -14,7 +14,7 @@ const typeDefs = `
     }
 
     type Subscription {
-        messageAdded: Message
+        messageAdded(content: String, senderName: String): Message
     }
 `;
 

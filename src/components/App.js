@@ -4,6 +4,7 @@ import { Query } from 'react-apollo'
 import logo from '../logo.svg'
 import '../styles/App.css'
 import InputName from './InputName'
+import MessageListWithData from './MessageList';
 
 class App extends Component {
   render() {
@@ -38,6 +39,9 @@ class App extends Component {
               )
             }}
           </Query>
+        </div>
+        <div className="MessageListContainer">
+            <MessageListWithData />
         </div>
       </div>
     )
